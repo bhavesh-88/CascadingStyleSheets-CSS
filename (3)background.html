@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 400px;
+            /* padding: 10px; */
+            margin: 10px;
+            border: 10px solid orange;
+
+        }
+        .background-color{
+            background-color: aqua;
+        }
+        .background-img{
+            background-image: url(./img/img4.jpg);  
+            /* background-image: url(https://picsum.photos/200/300?grayscale);    */
+        }
+        .background-attachment{
+            background-image: url(https://picsum.photos/id/237/200/300);
+            background-attachment: fixed;   /* by default local */
+            /* background-attachment: scroll; */
+        }
+        .background-repeat{
+            background-image: url(https://picsum.photos/id/237/200/300);
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat-x;   */
+            /* background-repeat: repeat-y; */
+            background-repeat: space; 
+        }
+        .background-position{
+            background-image: url(https://picsum.photos/id/237/200/300);
+            background-repeat: no-repeat;
+            /* background-position: center; */
+            /* background-position: top; */
+            background-position: bottom;
+            /* background-position: left; */
+            /* background-position: right; */
+            /* background-position: bottom 50px right 100px; */
+        }
+        .background-size{
+            background-image: url(https://picsum.photos/id/234/200/300);
+            background-repeat: no-repeat;
+          /* background-size: contain; */        /*  img set as div size    */
+           background-size: cover;           /* expend img whole div */
+           /* background-size: 30%; */
+        }
+        .background{
+            background: url(https://picsum.photos/id/231/200/300) no-repeat contain;
+        }
+        .background-clip{
+            background-image: url(https://picsum.photos/id/233/200/300);
+            background-repeat: no-repeat;
+            /* background-clip:padding-box ; */
+            /* background-clip: border-box; */
+            background-clip: content-box;
+            
+        }
+        .background-flag{
+            background: linear-gradient( orange ,white ,green);
+        }
+
+        .a{
+            background-image: linear-gradient(rgba(0, 0, 255, 0.5),orange),
+            url("https://picsum.photos/id/870/200/300?grayscale&blur=2");
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <ul>
+            <li>background-color</li>
+            <li>background-img</li>
+            <li>background-attachment</li>
+            <li>background-repeat</li>
+            <li>background-position</li>
+            <li>background-size</li>
+            <li>background</li>
+            <li>background-clip</li>
+            <li>background-flag</li>
+        </ul>
+    </div>
+
+    <div class="background-color"></div>
+    <div class="background-img"></div>
+    <div class="background-attachment"></div>
+    <div class="background-repeat"></div>
+    <div class="background-position"></div>
+    <div class="background-size"></div>
+    <div class="background"></div>
+    <div class="background-clip"></div>
+    <div class="background-flag"> tops technology</div>
+
+
+    <div class="a"> tops tech</div>
+</body>
+</html>

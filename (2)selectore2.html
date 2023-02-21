@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* descendant selector (space) */
+        /* section p,h4 {
+            background-color: aqua;
+        } */
+
+        /* child selector (>) */
+        /* section > p{
+            background-color: brown;
+        } */
+
+        /* adjacent sibling selector (+) */
+        /* section + p{
+            background-color: darkgreen;
+        } */
+
+        /* general sibling selector (~) */
+        section ~ p{
+            background-color: rgb(236, 20, 31);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>descendant selector (space)</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit modi neque, et alias assumenda rerum
+        incidunt harum unde ducimus exercitationem explicabo iste. Doloribus, ipsum voluptatem. Obcaecati iusto delectus
+        placeat?</p>
+    <section>
+        <h4>my name</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, nam praesentium. Iusto nobis eaque nostrum,
+            aspernatur, est, delectus libero harum aliquid molestiae dolorem excepturi rerum doloremque voluptates
+            reiciendis odio sunt?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, nam praesentium. Iusto nobis eaque nostrum,
+            aspernatur, est, delectus libero harum aliquid molestiae dolorem excepturi rerum doloremque voluptates
+            reiciendis odio sunt?</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio, incidunt dolorum eaque
+                recusandae explicabo dolor odit autem tempora enim fuga quidem sed quaerat minima, magni eum voluptates
+                perspiciatis officia?</p>
+        </div>
+    </section>
+
+
+
+    <h1>child selector (>)</h1>
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit modi neque, et alias assumenda rerum
+        incidunt harum unde ducimus exercitationem explicabo iste. Doloribus, ipsum voluptatem. Obcaecati iusto delectus
+        placeat?</p>
+    <section>
+        <h4>my name</h4>
+        <!-- child of section -->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, nam praesentium. Iusto nobis eaque nostrum,
+            aspernatur, est, delectus libero harum aliquid molestiae dolorem excepturi rerum doloremque voluptates
+            reiciendis odio sunt?</p>
+        <div>
+            <!-- grand child of section -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio, incidunt dolorum eaque
+                recusandae explicabo dolor odit autem tempora enim fuga quidem sed quaerat minima, magni eum voluptates
+                perspiciatis officia?</p>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, nam praesentium. Iusto nobis eaque nostrum,
+            aspernatur, est, delectus libero harum aliquid molestiae dolorem excepturi rerum doloremque voluptates
+            reiciendis odio sunt?</p>
+    </section>
+
+
+
+    <h1>adjacent sibling selector (+)</h1>
+    <!-- section after p than adjacent selector work -->
+     <!-- and only one tag select -->
+     <!-- sibling always work outsider -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit modi neque, et alias assumenda rerum
+        incidunt harum unde ducimus exercitationem explicabo iste. Doloribus, ipsum voluptatem. Obcaecati iusto delectus
+        placeat?</p>
+    <section>
+        <h4>my name</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, nam praesentium. Iusto nobis eaque nostrum,
+            aspernatur, est, delectus libero harum aliquid molestiae dolorem excepturi rerum doloremque voluptates
+            reiciendis odio sunt?</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio, incidunt dolorum eaque
+                recusandae explicabo dolor odit autem tempora enim fuga quidem sed quaerat minima, magni eum voluptates
+                perspiciatis officia?</p>
+        </div>
+    </section>
+    <!-- <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio, incidunt dolorum eaque
+            recusandae explicabo dolor odit autem tempora enim fuga quidem sed quaerat minima, magni eum voluptates
+            perspiciatis officia?</p>
+    </div>  -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio, incidunt dolorum eaque
+        recusandae explicabo dolor odit autem tempora enim fuga quidem sed quaerat minima, magni eum voluptates
+        perspiciatis officia?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio, incidunt dolorum eaque
+        recusandae explicabo dolor odit autem tempora enim fuga quidem sed quaerat minima, magni eum voluptates
+        perspiciatis officia?</p>
+    
+
+
+    <h1>general sibling selector (~)</h1>
+    <!-- section after p than general selector work -->
+    <!-- all common tag selected -->
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit modi neque, et alias assumenda rerum
+        incidunt harum unde ducimus exercitationem explicabo iste. Doloribus, ipsum voluptatem. Obcaecati iusto delectus
+        placeat?</p>
+    <section>
+        <h4>my name</h4>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio, incidunt dolorum eaque
+                recusandae explicabo dolor odit autem tempora enim fuga quidem sed quaerat minima, magni eum voluptates
+                perspiciatis officia?</p>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, nam praesentium. Iusto nobis eaque nostrum,
+            aspernatur, est, delectus libero harum aliquid molestiae dolorem excepturi rerum doloremque voluptates
+            reiciendis odio sunt?</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio, incidunt dolorum eaque
+                recusandae explicabo dolor odit autem tempora enim fuga quidem sed quaerat minima, magni eum voluptates
+                perspiciatis officia?</p>        
+            </div>    
+    </section>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio, incidunt dolorum eaque
+        recusandae explicabo dolor odit autem tempora enim fuga quidem sed quaerat minima, magni eum voluptates
+        perspiciatis officia?</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio, incidunt dolorum eaque
+            recusandae explicabo dolor odit autem tempora enim fuga quidem sed quaerat minima, magni eum voluptates
+            perspiciatis officia?</p>
+    </div>     
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus odio, incidunt dolorum eaque
+        recusandae explicabo dolor odit autem tempora enim fuga quidem sed quaerat minima, magni eum voluptates
+        perspiciatis officia?</p>
+</body>
+
+</html>
