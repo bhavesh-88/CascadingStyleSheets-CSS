@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 50px;
+            background-color: aqua;
+        }
+        p::first-line{
+            background-color: rgb(207, 168, 16);
+
+        }
+        .head::before{
+            content: "~";
+        }
+        .head::after{
+            content: "~";
+        }
+        a:visited{
+            color: brown;
+        }
+        
+        p::selection{
+            color: brown;
+            background-color: rgb(66, 7, 7);
+        }
+        /* pscudo class */
+
+        img:hover{
+            height: 250px;
+            width: 250px;
+        }
+        p:hover{
+            background-color: aqua;
+        }
+        .A{
+	         display:none;
+			 border:2px solid black;
+			 height:200px;
+			 width:100px;
+			 background-color:blue;
+	   }
+       div:hover .A{
+            display:block;
+       }
+
+       /* pscudo link */
+       a:link{
+        color: black;
+       }
+       a:hover{
+        color: rgb(248, 121, 138);
+       }
+       a:visited{
+        color: aqua;
+       }
+       a:active{
+        color: orange;
+       }
+    </style>
+</head>
+<body>
+
+    <!-- pscudo selectoretwo types -->
+
+    <!-- pscudo element ------ (::) -->
+    <!-- pscudo class -------(:) -->
+    
+    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis aliquam, quibusdam, veritatis quidem commodi quos esse id nisi libero dicta nostrum vitae dolor quam atque sint, sapiente possimus ut aperiam.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, vero amet. Blanditiis quis ipsum repellat cum sequi, praesentium voluptas magni, fugiat natus aliquam molestiae cupiditate hic voluptatem minima ex dicta.
+    </P>
+
+    <a href="#">home</a>
+    <h1 class="head">test</h1>
+
+     <!-- pscudo class -->
+    <div>
+        Curser over here:
+       <div class="A"><p>This is Pseudo class</p></div>   
+  </div>
+ <br>
+   <!-- pscudo link -->
+   <a href="https://drive.google.com/drive/starred">google drive</a>
+
+<br>
+   <img src="https://picsum.photos/id/237/200/300" height="100px" width="100px" alt="">
+
+</body>
+</html>
+
+
+
+
