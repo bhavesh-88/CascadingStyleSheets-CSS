@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cantainer{
+            width: 1100px;
+            margin: 0 auto;
+        }
+        .nav{
+            display: flex;
+        }
+        .jus{
+            justify-content: space-between;
+        }
+        header{
+            background-color: rgb(32, 20, 1);
+        }
+        .logo ,.icons{
+            color: antiquewhite;
+        }
+        ul li{
+            display: inline-block;
+            font-size: 30px;
+            /* margin: 10px; */
+            /* padding: 10px; */
+        }
+        ul li a{
+            color: antiquewhite;
+            text-decoration: none;
+            margin: 10px;
+            /* padding: 10px; */
+
+        }
+        .icons i{
+            font-size: 50px;
+        }
+    </style>    
+</head>
+
+<body>
+    <header>
+        <div class="cantainer">
+            <nav class="nav jus">
+                <div class="logo">
+                    my logo
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">help</a></li>
+                        <li><a href="#">contactus</a></li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <!-- this is font not tag -->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>
