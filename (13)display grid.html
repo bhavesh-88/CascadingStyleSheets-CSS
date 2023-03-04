@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: aqua;
+            /* height: 800px; */
+            border: 2px solid;
+
+            display: grid;
+            row-gap: 10px;
+            column-gap: 10px;
+            /* grid-template-columns: 250px 150px 50px;
+            grid-template-rows:  150px 150px 150px; */
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+              /* grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr); */
+        }
+        .items{
+            /* height: 150px;
+            width: 150px; */
+            border: 2px solid;
+            background-color:blueviolet;
+            /* margin: 10px; */
+        }
+        #header{
+            /* grid-column-start:span2; */
+            grid-column-start:1;
+            grid-column-end: 4;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+        }
+        #artical{
+            grid-row-start: 2;
+            grid-row-end: 4; 
+        }
+        #footer{
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="items" id="header">header</div>
+        <div class="items" id="artical"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items" id="footer">footer</div>
+
+    </div>
+</body>
+</html>
