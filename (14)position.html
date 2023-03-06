@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            background-color:aqua;
+            height: 800px;
+             display: flex;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            border: 3px solid;
+            margin: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+        #box2{
+           /*position: fixed; */           /*fixed position give our space to another div and work whole display */
+           /* position: sticky;    */          /* sticky position reserve his space and work only sementic tag border  */
+              /* top: 300px; */
+            /* left: 800px; */
+            position: relative;       /* relative position reserve his space and overflow whole display
+            position: absolute;            /*   absolute position overwrite his parent and give our space to another div and overflow whole display */
+        }
+        .item{
+            width: 50px;
+            height: 50px;
+            border: 2px solid;
+            background-color: black;
+            position: absolute;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>position type</h1>
+    <ul>
+        <li>1.relative</li>
+        <li>2.absolute</li>
+        <li>3.sticky</li>
+        <li>4.fixed</li>
+        <li>5.static</li>
+            static by default
+
+            relative==sticky
+            absolute==fixed
+            (parent)-
+                    relative
+                    (child)-absolute
+
+    </ul>
+    <section>
+        <div class="box">1</div>
+        <div class="box" id="box2">
+            <div class="item"></div>
+        </div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </section>
+    <section></section>
+</body>
+</html>
