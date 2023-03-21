@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            background-color: khaki;
+            height: 500px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            position: relative;
+            animation: ani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;  /* how many time */
+
+            /* animation-fill-mode: backwards; */
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: both; */
+
+            animation-direction:alternate;
+
+            /* animation-delay: 8s; */
+    
+            animation-timing-function: ease-in-out;
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes ani{
+            from{
+                width: 300px;
+            }
+            to{
+                width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box">
+
+        </div>
+    </section>
+</body>
+</html>

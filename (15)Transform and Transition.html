@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: aquamarine;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box{
+            border-radius: 20%;
+            height: 300px;
+            width: 300px;
+            background-color: blueviolet;
+
+             /* transition: - time duration */
+            /* transition: 8S;  */
+            /* transition: 8S all; */
+            /* transition: 4S all ease-in;       slow to fast   */
+            /* transition: 8S all ease-out;      fast to slow */
+            transition: 3S  all ease-in-out;     slow fast slow   
+
+        }
+        .box:hover{
+            /* transform:- one property to convert another property */
+            /* transform: translate(120px); */        
+            /* transform: translateX(300px); */
+            /* transform: translateX(-300px); */
+            /* transform: translatey(300px); */
+            /* transform: translatey(-300px); */
+
+            /* transform: rotate(360deg); */
+            /* transform: rotatex(360deg); */
+            /* transform: rotatey(360deg); */
+            /* transform: rotatex(-360deg); */
+            /* transform: rotatey(-360deg); */
+
+            /* zoom */
+            /* transform: scale(1);     300+300 */
+            /* transform: scale(2);     300+600 */
+            /* transform: scalex(2); */
+            /* transform: scaley(2); */
+            /* transform: scale(0.5) translate(-100%, -100%); */
+
+            /* flip */
+            /* transform: skew(180deg); */
+            /* transform: skewy(180deg); */
+            /* transform: skewx(180deg); */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

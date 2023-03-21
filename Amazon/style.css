@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* width: 70%; */
+}
+
+nav {
+    background-color: rgb(31, 30, 30);
+
+}
+ 
+.align {
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+} 
+
+ .three input {
+    width: 610px;
+    height: 50px;
+    margin: 7px;
+}
+
+img {
+    width: 155px;
+    height: 60px;
+}
+
+.four {
+    text-decoration: none;
+
+    color: rgb(235, 235, 235);
+    font-size: 25px;
+    margin: 15px;
+}
+
+ .five {
+    display: flex;
+    color: white;
+    font-size: 22px;
+    margin: 15px;
+}
+
+.six {
+    display: flex;
+    color: white;
+    font-size: 22px;
+    margin: 20px;
+}   
+
+.five img {
+    width: 30px;
+    height: 20px;
+}
+
+.container1 {
+    background-color: rgb(31, 31, 29);
+}
+
+ul li {
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li img {
+    height: 25px;
+    width: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
