@@ -1,0 +1,113 @@
+
+div{
+ 
+  width: 900px;
+}
+   
+.one{
+
+    text-transform: capitalize;
+    font-size: larger;
+
+}
+
+.two{
+
+    text-transform: uppercase;
+    font-size: larger;
+
+}
+
+.three{
+
+    text-transform: lowercase ;
+    font-size: larger;
+
+}
+
+.four{
+
+    text-transform: none;
+    font-size: larger;
+
+}
+
+.five{
+
+    text-indent: 80px;
+    font-size: larger;
+
+}
+
+.six{
+
+    letter-spacing: 10px;
+   
+
+}
+
+.seven{
+
+    word-spacing: 20px;
+    font-size: larger;
+
+}
+
+.eight{
+
+    line-height: 35px;
+    font-size: larger;
+
+}
+
+.nine{
+
+    text-align: right;
+    font-size: larger;
+
+}
+
+.ten{
+
+    text-align: justify;
+    font-size: larger;
+
+}
+
+.one1{
+
+    text-align: center;
+    font-size: larger;
+
+}
+
+.one2{
+
+    text-decoration: underline;
+    font-size: larger;
+
+}
+
+.one3{
+
+    text-decoration: none;
+    font-size: larger;
+
+}
+
+a{
+
+    text-decoration: none;
+
+} 
+
+ 
+
+h1{
+    text-shadow: 5px 5px 5px red;
+    
+}
+
+
+
+
